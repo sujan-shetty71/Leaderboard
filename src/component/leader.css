@@ -1,0 +1,72 @@
+body {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #333;
+}
+
+.leaderboard-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.leaderboard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: auto;
+    max-height: 600px;
+    animation: changeColor 5s infinite alternate;
+    color: white;
+}
+
+@keyframes changeColor {
+    0% { background-color: #16161e;
+        } 
+    100% { background-color: #16161e; }
+}
+
+.leaderboard-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #1b1919;
+    font-weight: bold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1px;
+}
+
+.leaderboard-title {
+    margin-top: 1cm;
+    color: white;
+}
+
+.leaderboard-body {
+    padding-top: 5px;
+}
+
+.leaderboard-row {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.leaderboard-column {
+    flex: 1; 
+}
+
+.leaderboard-row:nth-child(1) {
+    color: #e0b851; 
+}
+
+.leaderboard-row:nth-child(2) {
+    color: #b0bac2; 
+}
+
+.leaderboard-row:nth-child(3) {
+    color: #bf856d;
+}
